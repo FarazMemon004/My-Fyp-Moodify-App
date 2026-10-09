@@ -1,102 +1,171 @@
-Moodify - Emotion-Based Music Generation
+### Backend – Final Year Project (FYP)
 
-Project Overview
+### About the Project
 
-Moodify is an AI-powered music generation application that detects a user's emotions through facial recognition and
-generates music accordingly using machine learning models. The system utilizes OpenCV for face detection, DeepFace for
-emotion analysis, and Magenta’s MusicVAE for generating music compositions based on detected emotions.
+This repository contains the Python Flask backend for my Final Year Project (FYP). The backend is responsible for handling API requests, processing application data, and providing communication between the Android frontend and server-side services.
 
-Features
+The backend is designed with a modular architecture to support future enhancements, including AI-powered features and music generation using Google Magenta models.
 
-Facial Recognition: Detects user emotions in real-time using DeepFace.
+### Features
 
-Emotion-Based Music Generation: Generates music tailored to the detected emotion.
+* Python Flask REST API
 
-User Authentication: Firebase authentication for secure login and sign-up.
+* Communication with the Android frontend
 
-Music Storage & Playback: Stores generated music and allows users to play and download it.
+* JSON request and response handling
 
-Mobile Application: Developed in Kotlin with seamless interaction with the Flask back-end.
+* Backend processing and application logic
 
-Technologies Used
+* Integration-ready architecture for AI and machine learning
 
-Back-End: Python 3.8 , Flask, OpenCV, DeepFace, Magenta, TensorFlow, Firebase Admin
+* Support for future music-generation functionality using Google Magenta
 
-Front-End: Kotlin (Android Studio), Firebase Authentication
+* Error handling and configurable server settings
 
-Database: Firebase Firestore (User Data & Authentication)
+### Technologies Used
 
-Deployment: ngrok for testing mobile connectivity
+* Programming Language: Python
 
-Installation Instructions
+* Backend Framework: Flask
 
-Back-End Setup
+* API Architecture: REST API
 
-Install dependencies:
+* Data Format: JSON
 
-[pip install -r requirements.txt](requirement.txt)
+* AI/ML Resources: Google Magenta
 
-Run the Flask server:
+* Version Control: Git and GitHub
 
-[python app.py](backend/OpenCv-Magenta.py)
+### Project Structure
 
-(Optional) Use ngrok to expose the local server for mobile testing:
+Note: The actual structure may vary depending on your implementation.
 
-[ngrok http 5000]()
+### Requirements
 
-Front-End Setup (Android Studio)
+* Python 3.10 or a version compatible with the selected dependencies
 
-Open the project in Android Studio.
+* pip
 
-Connect Firebase to the project for authentication.
+* Virtual environment support
 
-Update flaskUrl in GenerateMusicActivity.kt with your server URL.
-Update flaskUrl in FacialRecognitionActivity.kt with your server URL.
-Update flaskUrl in MusicPlayerActivity.kt with your server URL
+* Git
 
-Build and run the application on an emulator or real device.
+* Android frontend application
 
-API Endpoints
+* Internet connection for installing dependencies and downloading models
 
-**Emotion Detection**
+### Installation and Setup
 
-POST /detect-emotion
+### 1\. Clone the Repository
 
-Accepts: Image file (JPEG/PNG)
+Replace the placeholders with your actual GitHub repository URL and name.
 
-Returns: JSON with detected emotion
+### 2\. Create a Virtual Environment
 
-**Generate Music**
+On macOS:
 
-POST /generate-music
+### 3\. Install Dependencies
 
-Accepts: JSON with emotion type
+If `requirements.txt` already exists:
 
-Returns: List of MIDI file URLs
+If you are creating the Flask backend from scratch, install Flask first:
 
-**Download Music**
+### 4\. Configure Environment Variables
 
-GET /generated_music/<filename>
+Create a local `.env` file if your application requires environment variables. Keep private credentials out of GitHub and use `.env.example` to document required variable names without real secrets.
 
-Returns: MIDI file download
+### 5\. Run the Flask Server
 
-Future Enhancements
+If your Flask application entry point is `app.py`:
 
-Improve emotion detection accuracy using deep learning.
+The API may be available at:
 
-Add support for cloud-based music storage.
+The actual endpoints depend on your Flask implementation.
 
-Implement real-time emotion tracking for dynamic music generation.
+### Android Frontend Integration
 
-Deploy the back-end on a cloud server for better performance.
+The Android application communicates with the Flask backend through REST API endpoints.
 
-Contributors
+For local development:
 
-Muhammad Faraz & team - AI & Back-End Development
+* Android Emulator: `http://10.0.2.2:5000`
 
-- Front-End, UI/UX, Testing
+* Physical Android Device: Use the computer's local IP address when both devices are on the same network and the Flask server is configured to accept the connection.
 
-License
+Use HTTPS and appropriate authentication and security controls for production deployment.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Google Magenta – AI Music Generation Models
 
+Google Magenta is an open-source machine-learning project that provides tools and models for music generation and other creative applications.
+
+### Official Model Downloads and Resources
+
+* Google Magenta GitHub Repository: [https://github.com/magenta/magenta](https://github.com/magenta/magenta)
+
+* Official Magenta Website: [https://magenta.tensorflow.org/](https://magenta.tensorflow.org/)
+
+* Magenta RealTime 2 Repository: [https://github.com/magenta/magenta-realtime](https://github.com/magenta/magenta-realtime)
+
+* Magenta RealTime 2 Official Website: [https://magenta.withgoogle.com/magenta-realtime-2](https://magenta.withgoogle.com/magenta-realtime-2)
+
+### Downloading and Using the Models
+
+* Open the official Google Magenta repository.
+
+* Select a model suitable for your music-generation requirements.
+
+* Follow the model's official installation and download instructions.
+
+* Review the supported Python version, dependencies, hardware requirements, and license.
+
+* Store downloaded model weights outside Git if they are too large to include in the repository.
+
+* Integrate the model into the Flask backend if music generation is part of your application's functionality.
+
+Important: The original Magenta repository is archived. Check its compatibility before installing it. Magenta RealTime 2 is another option for interactive music generation, but it has its own requirements.
+
+These links are resources for downloading and using the models; the models are not automatically installed when you run the Flask backend.
+
+### Security Guidelines
+
+* Never upload passwords, API keys, tokens, or private credentials.
+
+* Keep `.env` files out of version control.
+
+* Avoid committing large model weights and generated files.
+
+* Validate incoming API requests.
+
+* Handle errors without exposing sensitive server details.
+
+* Use HTTPS and appropriate access controls in production.
+
+### Future Improvements
+
+* Add more REST API endpoints.
+
+* Improve backend performance and logging.
+
+* Add automated tests.
+
+* Integrate suitable AI models.
+
+* Implement music-generation APIs if required by the project.
+
+* Improve deployment and monitoring.
+
+### Project Information
+
+* Project Type: Final Year Project (FYP)
+
+* Frontend: Android Application
+
+* Backend: Python Flask
+
+* AI/ML Resources: Google Magenta music-generation models
+
+* Version Control: GitHub
+
+### License
+
+Add an appropriate license for your project and review the licenses of any third-party models and dependencies before redistribution.
