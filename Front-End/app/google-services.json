@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "62131542905",
+    "project_id": "emomusic-ab446",
+    "storage_bucket": "emomusic-ab446.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62131542905:android:4e85c0fe8f7b6728ea2da8",
+        "android_client_info": {
+          "package_name": "com.example.Moodify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD0qaBdzMPQt_1ivgreyek1JU6UtRblag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

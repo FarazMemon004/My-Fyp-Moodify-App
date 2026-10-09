@@ -1,0 +1,18 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Background color inside the circle -->
+    <solid android:color="@android:color/transparent"/>
+
+    <!-- Outline (border) -->
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/holo_red_dark"/>
+
+    <!-- Optional padding inside the border -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp"/>
+</shape>

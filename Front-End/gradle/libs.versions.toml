@@ -1,0 +1,67 @@
+[versions]
+agp = "8.9.0"
+androidxCoreKtx = "1.12.0"
+androidxJunit = "1.2.1"
+appcompatVersion = "1.7.0"
+converterGson = "2.9.0"
+coreKtxVersion = "1.15.0"
+espressoCoreVersion = "3.6.1"
+firebaseAuthKtxVersion = "23.2.0"
+firebaseCrashlyticsVersion = "19.4.1"
+firebaseDatabaseKtxVersion = "21.0.0"
+firebaseInappmessagingVersion = "21.0.1"
+googleServicesVersion = "4.3.10"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinxCoroutinesAndroid = "1.7.3"
+material = "1.12.0"
+firebaseInappmessaging = "21.0.1"
+firebaseAuthKtx = "23.2.0"
+firebaseDatabaseKtx = "21.0.0"
+firebaseCrashlytics = "19.4.1"
+gradle = "8.9.0"
+googleServices = "4.4.2"
+firebaseCrashlyticsGradle = "3.0.3"
+materialVersion = "1.12.0"
+playServicesMlkitFaceDetection = "17.1.0"
+
+[libraries]
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v1120 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+androidx-espresso-core-v351 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-junit-v115 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+core-ktx-v1120 = { module = "androidx.core:core-ktx", version.ref = "androidxCoreKtx" }
+firebase-auth-ktx-v2230 = { module = "com.google.firebase:firebase-auth-ktx", version.ref = "firebaseAuthKtxVersion" }
+firebase-crashlytics-v1860 = { module = "com.google.firebase:firebase-crashlytics", version.ref = "firebaseCrashlyticsVersion" }
+firebase-database-ktx-v2030 = { module = "com.google.firebase:firebase-database-ktx", version.ref = "firebaseDatabaseKtxVersion" }
+firebase-inappmessaging-v2040 = { module = "com.google.firebase:firebase-inappmessaging", version.ref = "firebaseInappmessagingVersion" }
+google-firebase-database-ktx = { module = "com.google.firebase:firebase-database-ktx" }
+google-firebase-auth-ktx = { module = "com.google.firebase:firebase-auth-ktx" }
+google-services-v4310 = { module = "com.google.gms:google-services", version.ref = "googleServicesVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+material-v1100 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
+firebase-inappmessaging = { group = "com.google.firebase", name = "firebase-inappmessaging", version.ref = "firebaseInappmessaging" }
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
+firebase-database-ktx = { group = "com.google.firebase", name = "firebase-database-ktx", version.ref = "firebaseDatabaseKtx" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics", version.ref = "firebaseCrashlytics" }
+gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "gradle" }
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+firebase-crashlytics-gradle = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
+play-services-mlkit-face-detection = { group = "com.google.android.gms", name = "play-services-mlkit-face-detection", version.ref = "playServicesMlkitFaceDetection" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

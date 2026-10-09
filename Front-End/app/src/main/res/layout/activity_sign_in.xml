@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/background_gradient"
+    tools:ignore="ExtraText">
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="281dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mainlogo"
+        android:contentDescription="@string/main_logo" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_textbox"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="9dp"
+            android:src="@drawable/user_96"
+            android:contentDescription="@string/todo" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:fontFamily="@font/raleway"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_textbox"
+        android:padding="10dp"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="9dp"
+            android:src="@drawable/padlock"
+            android:contentDescription="@string/todo" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:autofillHints="password"
+            android:padding="8dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/raleway" />
+
+    </LinearLayout>
+
+
+        <!-- Remember Me Checkbox -->
+        <CheckBox
+            android:id="@+id/rememberMeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_for_30_days"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/raleway"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <!-- Forgot Password -->
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="@string/log_in"
+            android:textSize="16sp"
+            android:background="@drawable/gradient_button"
+            android:textColor="@color/white"
+            android:layout_marginBottom="30dp"/>
+
+
+        <TextView
+            android:id="@+id/AlreadyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway"
+            android:layout_marginTop="16dp"/>
+
+            <TextView
+            android:id="@+id/signUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sign_Up"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:clickable="true"
+                android:focusable="true"
+                />
+</LinearLayout>

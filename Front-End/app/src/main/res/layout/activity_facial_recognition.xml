@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_facial">
+
+    <!-- Camera Preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="390dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        />
+    <!-- Bounding Box Overlay for Face Detection -->
+    <ImageView
+        android:id="@+id/boundingBoxOverlay"
+        android:layout_width="390dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/circlecamera" />
+
+    <!-- Detected Emotion Display -->
+    <TextView
+        android:id="@+id/emotionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="145dp"
+        android:background="@android:color/black"
+        android:padding="8dp"
+        android:text="@string/detecting"
+        android:fontFamily="@font/raleway"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <!-- Detect Emotion Button -->
+    <Button
+        android:id="@+id/detectEmotionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detect_emotion"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

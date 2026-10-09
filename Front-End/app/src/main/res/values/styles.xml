@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <!-- Custom style for Navigation Drawer text -->
+    <style name="NavigationDrawerText">
+        <item name="android:textSize">16sp</item> <!-- Text size -->
+        <item name="android:textColor">@color/black</item> <!-- Text color -->
+        <item name="android:textStyle">normal</item> <!-- Text style (normal, bold, italic) -->
+    </style>
+</resources>

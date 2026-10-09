@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/mainlogo"
+        android:layout_gravity="center"
+        android:contentDescription="@string/main_logo">
+
+    </ImageView>
+    <!-- Current Email -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/change_email"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway"
+        android:textSize="40sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/newEmailEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="@string/new_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/raleway"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/rounded_textbox"/>
+
+    <!-- New Email -->
+    <EditText
+        android:id="@+id/ConfirmNewEmailEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="@string/confirm_new_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/raleway"
+        android:background="@drawable/rounded_textbox"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:autofillHints="password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/raleway"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/rounded_textbox"/>
+
+    <!-- Change Email Button -->
+    <Button
+        android:id="@+id/changeEmailButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="110dp"
+        android:fontFamily="@font/raleway"
+        android:background="@drawable/rounded_input"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Error Message -->
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:fontFamily="@font/raleway"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

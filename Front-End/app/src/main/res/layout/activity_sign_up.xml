@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="24dp">
+
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/raleway"
+        android:text="@string/create_an"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/titleText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/raleway"
+        android:text="@string/account"
+        android:textColor="@color/PsychedelicPurple"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- Username Field -->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_textbox"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="9dp"
+            android:contentDescription="@string/user_logo"
+            android:src="@drawable/user_96" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:background="@null"
+            android:padding="8dp"
+            android:fontFamily="@font/raleway"
+            />
+
+    </LinearLayout>
+
+    <!-- Email Field -->
+    <LinearLayout
+        android:layout_width="252dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="255dp"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_textbox"
+        android:padding="10dp"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="9dp"
+            android:src="@drawable/email"
+            android:contentDescription="@string/email_logo"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:autofillHints="emailAddress"
+            android:padding="8dp"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/raleway" />
+    </LinearLayout>
+
+    <!-- Password Field -->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="313dp"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_textbox"
+        android:padding="10dp"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="9dp"
+            android:contentDescription="@string/pass_logo"
+            android:src="@drawable/padlock"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:autofillHints="password"
+            android:padding="8dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/raleway"/>
+
+    </LinearLayout>
+
+    <!-- Confirm Password Field -->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="373dp"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_textbox"
+        android:padding="10dp"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="9dp"
+            android:contentDescription="@string/pass_logo"
+            android:src="@drawable/padlock"/>
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:padding="8dp"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/raleway"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:text="@string/Sign_Up"
+        android:textSize="25sp"
+        android:background="@drawable/gradient_button"
+        android:textColor="@color/white"
+        android:layout_marginStart="68dp"
+        android:fontFamily="@font/raleway"
+        android:layout_marginTop="460dp" />
+
+    <LinearLayout
+        android:layout_marginTop="515dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/signInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/white"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/raleway"/>
+
+        <TextView
+            android:id="@+id/signInLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"
+            android:focusable="true"
+            android:text="@string/sign_in"
+            android:textColor="@color/PsychedelicPurple"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/raleway"
+            android:clickable="true"
+            android:onClick="signInLink"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_history" type="id"/>
+    <item name="loginButton" type="id"/>
+    <item name="editTextEmail" type="id"/>
+    <item name="editTextPassword" type="id"/>
+    <item name="btnSave" type="id"/>
+    <item name="arrow" type="id"/>
+    <item name="ChangeEmail" type="id"/>
+    <item name="ChangePassword" type="id"/>
+    <item name="About" type="id"/>
+    <item name="menu_settings" type="id"/>
+    <item name="menu_change_email" type="id"/>
+    <item name="menu_change_password" type="id"/>
+    <item name="menu_about" type="id"/>
+    <item name="et_password" type="id"/>
+    <item name="btn_login" type="id"/>
+    <item name="btn_signup" type="id"/>
+    <item name="menu_logout" type="id"/>
+</resources>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_history"
+        android:title="@string/history"
+        android:icon="@drawable/history" />
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings" />
+
+    <item
+        android:id="@+id/menu_change_email"
+        android:title="@string/change_email"
+        android:visible="false"
+        android:icon="@drawable/email" />
+
+    <item
+        android:id="@+id/menu_change_password"
+        android:title="@string/change_password"
+        android:visible="false"
+        android:icon="@drawable/padlock" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/logout" />
+</menu>
