@@ -66,7 +66,7 @@ On macOS:
 
 ### 3\. Install Dependencies
 
-If `requirements.txt` already exists:
+install`requirements.txt` dependencies 
 
 If you are creating the Flask backend from scratch, install Flask first:
 
